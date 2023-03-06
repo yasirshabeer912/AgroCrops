@@ -1,0 +1,180 @@
+<?php
+session_start();
+include 'component/headerlinks.php';
+?>
+
+
+  <!-- Start main-content -->
+  <div class="main-content-area">
+    <!-- Section: page title -->
+   
+
+    <section class="">
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-lg-12 col-xl-12">
+              <!-- Isotope Filter -->
+            
+              <!-- End Isotope Filter -->
+
+              <!-- Isotope Gallery Grid -->
+              <div id="gallery-holder-618422" class="isotope-layout grid-3 gutter-15 clearfix lightgallery-lightbox">
+                <div class="isotope-layout-inner">
+               
+                <?php
+                $id=$_GET['id'];
+                  $sql=$con->query("select * from ads where category_id='$id'");
+                  while($row=$sql->fetch_assoc()){
+                    $category_id = $row['category_id'];
+                    $category = $con->query("select * from category where id='$category_id'")->fetch_assoc()
+                  ?>
+                  <div class="isotope-item cat1 cat3">
+                    <div class="isotope-item-inner">
+                      <div class="product">
+                        <div class="product-header">
+                        
+                          <div class="thumb image-swap">
+                            <a href="detail.php?id=<?php echo $row['id'] ?>"><img style="height: 300px;" src="PICS/<?php echo $row['image'] ?>" class="product-main-image img-responsive img-fullwidth" width="300" height="300" alt="Ads"></a>
+                            <a href="detail.php?id=<?php echo $row['id'] ?>"><img style="height: 300px;" src="PICS/<?php echo $row['image'] ?>" class="product-hover-image img-responsive img-fullwidth" alt="Ads"></a>
+                          </div>
+                          <div class="product-button-holder">
+                           
+                          </div>
+                        </div>
+                        <div class="product-details">
+                        <h6 class="text-secondary"> <?php echo $category['name'] ?></h6>
+                          <h5 class="product-title"><a href="detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></h5>
+                          <span class="price">
+                          
+                            <ins><span class="amount"><span class="currency-symbol">Rs</span><?php  echo $row['price'] ?></span></ins>
+                          </span>
+                          <div class="price_location d-flex justify-content-between  my-2">
+                                <span class="address "><?php echo $row['location'] ?></span>
+                                <span class="time"><?php echo $row['date'] ?></span>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+             
+<?php
+}
+?>
+
+                </div>
+              </div>
+              <!-- End Isotope Gallery Grid -->
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer agrool-footer bg-img-center" data-tm-bg-img="images/footer-bg.png">
+    <div class="footer-widget-area">
+      <div class="footer-top border-bottom pt-40 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+              <div class="contact-widgets">
+                <div class="icon-box icon-left text-left iconbox-centered-in-responsive animate-icon-on-hover animate-icon-rotate-y">
+                  <div class="icon icon-left text-theme-colored2 mr-10"><i class="fas fa-envelope-open-text"></i></div>
+                  <div class="icon-text">
+                    <h5 class="title mb-0 font-current-theme3">Email address</h5>
+                    <h6 class="semi-title mt-0">needhelp@agrool.com</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+              <div class="contact-widgets text-start text-sm-center">
+                <img src="images/footer-logo-1.png" alt="footer-logo-1.png">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 offset-xl-1">
+              <div class="contact-widgets">
+                <div class="icon-box icon-left text-left iconbox-centered-in-responsive animate-icon-on-hover animate-icon-rotate-y">
+                  <div class="icon icon-left text-theme-colored2 mr-10"><i class="fas fa-phone-alt"></i></div>
+                  <div class="icon-text">
+                    <h5 class="title mb-0 font-current-theme3">Call now</h5>
+                    <h6 class="semi-title mt-0">+ 92 666 888 0000</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-100 pb-40 pb-lg-60">
+        <div class="row">
+          <div class="col-md-6 col-xl-4 pr-80">
+            <div class="widget tm-widget-contact-info">
+              <h4 class="widget-title">About</h4>
+              <div class="description">Lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do eiusmod tempor incididunt ut labore et.</div>
+              <ul class="styled-icons icon-white icon-md icon-hover-theme-colored1 icon-circled clearfix mt-30">
+                <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-2">
+            <div class="widget widget_nav_menu">
+              <h4 class="widget-title">Links</h4>
+              <div class="menu-service-nav-menu-container">
+                <ul id="menu-service-nav-menu" class="menu">
+                  <li class="menu-item"><a href="#">Our Projects</a></li>
+                  <li class="menu-item"><a href="#">About Us</a></li>
+                  <li class="menu-item"><a href="#">Our Mission</a></li>
+                  <li class="menu-item"><a href="#">Meet the Team</a></li>
+                  <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-2">
+            <div class="widget widget_nav_menu">
+              <h4 class="widget-title">Explore</h4>
+              <div class="menu-service-nav-menu-container">
+                <ul id="menu-service-nav" class="menu">
+                  <li class="menu-item"><a href="#">Site Map</a></li>
+                  <li class="menu-item"><a href="#">Help Center</a></li>
+                  <li class="menu-item"><a href="#">Terms of Use</a></li>
+                  <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="widget">
+              <h4 class="widget-title">Newsletter</h4>
+              <p>Sign up now for weekly news and updates</p>
+              <form id="mailchimp-subscription-form1" class="newsletter-form">
+                <input type="email" value="" name="EMAIL" placeholder="Enter Your Email" class="form-control" id="mce-EMAIL" data-tm-height="70">
+                <span class="input-group-btn">
+                  <button data-tm-height="70" class="btn btn-theme-colored2 mt-10 font-weight-600" type="submit">Subscribe Now</button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="js/custom.js"></script>
+</body>
+</html>

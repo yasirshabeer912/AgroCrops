@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "FlaticonCurrentTheme";
+    src: url("../fonts/flaticon-set-current-theme/flaticon-set-current-theme.ttf") format("truetype"),
+url("../fonts/flaticon-set-current-theme/flaticon-set-current-theme.woff") format("woff"),
+url("../fonts/flaticon-set-current-theme/flaticon-set-current-theme.woff2") format("woff2"),
+url("../fonts/flaticon-set-current-theme/flaticon-set-current-theme.eot") format("embedded-opentype"),
+url("../fonts/flaticon-set-current-theme/flaticon-set-current-theme.svg") format("svg");
+}
+
+i[class^="flaticon-agri-"]:before, i[class*=" flaticon-agri-"]:before {
+    font-family: FlaticonCurrentTheme !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-agri-agriculture:before {
+    content: "\f101";
+}
+.flaticon-agri-pests:before {
+    content: "\f102";
+}
+.flaticon-agri-analysis:before {
+    content: "\f103";
+}
+.flaticon-agri-setting:before {
+    content: "\f104";
+}
+.flaticon-agri-farm:before {
+    content: "\f105";
+}
+.flaticon-agri-crop:before {
+    content: "\f106";
+}
+.flaticon-agri-animal:before {
+    content: "\f107";
+}
+.flaticon-agri-environment:before {
+    content: "\f108";
+}
+.flaticon-agri-nature:before {
+    content: "\f109";
+}
+.flaticon-agri-drone:before {
+    content: "\f10a";
+}
+.flaticon-agri-conveyor:before {
+    content: "\f10b";
+}
+.flaticon-agri-monitor:before {
+    content: "\f10c";
+}
+.flaticon-agri-cloud:before {
+    content: "\f10d";
+}
+.flaticon-agri-plant:before {
+    content: "\f10e";
+}
+.flaticon-agri-feeder:before {
+    content: "\f10f";
+}
+.flaticon-agri-greenhouse:before {
+    content: "\f110";
+}
+.flaticon-agri-hydroponic:before {
+    content: "\f111";
+}
+.flaticon-agri-smart-farm:before {
+    content: "\f112";
+}
+.flaticon-agri-quality:before {
+    content: "\f113";
+}
+.flaticon-agri-irrigation:before {
+    content: "\f114";
+}
+.flaticon-agri-chemistry:before {
+    content: "\f115";
+}
+.flaticon-agri-statistics:before {
+    content: "\f116";
+}
+.flaticon-agri-product:before {
+    content: "\f117";
+}
+.flaticon-agri-nature-1:before {
+    content: "\f118";
+}
+.flaticon-agri-information:before {
+    content: "\f119";
+}
+.flaticon-agri-information-1:before {
+    content: "\f11a";
+}
+.flaticon-agri-location:before {
+    content: "\f11b";
+}
+.flaticon-agri-cow:before {
+    content: "\f11c";
+}
+.flaticon-agri-farmer:before {
+    content: "\f11d";
+}
+.flaticon-agri-smartphone:before {
+    content: "\f11e";
+}
+.flaticon-agri-soil:before {
+    content: "\f11f";
+}
+.flaticon-agri-warehouse:before {
+    content: "\f120";
+}
+.flaticon-agri-weather:before {
+    content: "\f121";
+}
+.flaticon-agri-sprinkle:before {
+    content: "\f122";
+}
+.flaticon-agri-tractor:before {
+    content: "\f123";
+}
+.flaticon-agri-wheat:before {
+    content: "\f124";
+}
+.flaticon-agri-pest:before {
+    content: "\f125";
+}
+.flaticon-agri-honeycomb:before {
+    content: "\f126";
+}
+.flaticon-agri-flower:before {
+    content: "\f127";
+}
+.flaticon-agri-dairy-products:before {
+    content: "\f128";
+}
+.flaticon-agri-duck:before {
+    content: "\f129";
+}
+.flaticon-agri-eggs:before {
+    content: "\f12a";
+}
+.flaticon-agri-fruit-tree:before {
+    content: "\f12b";
+}
+.flaticon-agri-harvest:before {
+    content: "\f12c";
+}
+.flaticon-agri-growing-plant:before {
+    content: "\f12d";
+}
+.flaticon-agri-growing-seed:before {
+    content: "\f12e";
+}
+.flaticon-agri-fruit:before {
+    content: "\f12f";
+}
+.flaticon-agri-pond:before {
+    content: "\f130";
+}
+.flaticon-agri-market:before {
+    content: "\f131";
+}
+.flaticon-agri-farm-house:before {
+    content: "\f132";
+}
+.flaticon-agri-sickle:before {
+    content: "\f133";
+}
+.flaticon-agri-haystack:before {
+    content: "\f134";
+}
+.flaticon-agri-hen:before {
+    content: "\f135";
+}
+.flaticon-agri-hydroponic-1:before {
+    content: "\f136";
+}
+.flaticon-agri-carrot:before {
+    content: "\f137";
+}
+.flaticon-agri-corn:before {
+    content: "\f138";
+}
+.flaticon-agri-onion:before {
+    content: "\f139";
+}
+.flaticon-agri-seeding:before {
+    content: "\f13a";
+}
+.flaticon-agri-planting:before {
+    content: "\f13b";
+}
+.flaticon-agri-planting-1:before {
+    content: "\f13c";
+}
+.flaticon-agri-seeds:before {
+    content: "\f13d";
+}
+.flaticon-agri-planting-2:before {
+    content: "\f13e";
+}
+.flaticon-agri-wheat-1:before {
+    content: "\f13f";
+}
+.flaticon-agri-tomato:before {
+    content: "\f140";
+}
+.flaticon-agri-sawing:before {
+    content: "\f141";
+}
+.flaticon-agri-wheat-sack:before {
+    content: "\f142";
+}
